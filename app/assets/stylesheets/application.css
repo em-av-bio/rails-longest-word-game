@@ -13,3 +13,99 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  padding: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(54, 98, 23);
+  background: linear-gradient(90deg, rgba(54, 98, 23, 1) 0%, rgba(118, 219, 70, 1) 100%);
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 16px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid #666666;
+  border-right: 0;
+}
+
+input[type="submit"] {
+  padding: 16px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid #333333;
+  background-color: deepskyblue;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button {
+  text-decoration: none;
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: solid 1px #333333;
+  text-transform: uppercase;
+  background-color: dodgerblue;
+  color: white;
+  font-weight: bold;
+}
+
+.letters {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.letters > div {
+  border-radius: 8px;
+  padding: 24px 0;
+  background-color: ivory;
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+  position: relative;
+  width: 80px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letters > div > span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.letters>div>em {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.score > span {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+
+.score > p {
+  font-weight: bold;
+}

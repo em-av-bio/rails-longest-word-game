@@ -1,0 +1,17 @@
+<h1>Find the longest word</h1>
+
+<div class="letters">
+  <% @letters_array.each do |letter| %>
+    <div>
+      <span><%= letter[0] %></span>
+      <em><%= letter[1] %></em>
+    </div>
+  <% end %>
+</div>
+<p>What's the longest word you can find?</p>
+<form action="/score" method="post" data-turbo="false">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :grid, @letters %>
+  <input type="text" name="word" placeholder="Type a word" />
+  <input type="submit" value="Go!" />
+</form>
